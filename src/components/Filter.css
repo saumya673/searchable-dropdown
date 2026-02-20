@@ -1,0 +1,14 @@
+.filter-input {
+  width: 90%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.filter-input::placeholder {
+  color: #d7d7d7;
+}
