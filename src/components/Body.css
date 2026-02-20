@@ -1,3 +1,11 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
 .dropdown-btn{
     display: flex;
     justify-content: space-between;
@@ -10,9 +18,42 @@
     box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
 }
 
-.arrow-btn{
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.add{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-input{
+  padding: 20px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(246, 178, 8, 0.841);
+}
+
+
+.add-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
     background: transparent;
-    color: white;
+    border-radius: 10px;
+    height: 20px;
+    padding: 20px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 20px rgba(246, 178, 8, 0.841);
 }
 
 

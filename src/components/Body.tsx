@@ -24,9 +24,20 @@ const Body = () => {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-btn">
-        Countries
-        <button className="arrow-btn" onClick={handleDropdownClick}><ArrowDropDownIcon/></button>
+      <div className="btns">
+        {/* Dropdown Button */}
+        <div className="dropdown-btn">
+          Countries
+          <div onClick={handleDropdownClick}><ArrowDropDownIcon/></div>
+        </div>
+
+        {/* Add Button */}
+        {showCountry && (
+          <div className="add">
+            <input className="add-input" type="text" placeholder="Add Country"/>
+            <div className="add-btn">Add</div>
+          </div>
+        )}
       </div>
       {showCountry && (
         <Dropdown countryData={data}/>

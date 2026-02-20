@@ -18,7 +18,10 @@ const Dropdown = ({ countryData }: { countryData: Country[] }) => {
 
   return (
     <div className="dropdown-box">
-      <Filter value={searchTerm} onChange={setSearchTerm} />
+
+      <div className="filter-sticky">
+        <Filter value={searchTerm} onChange={setSearchTerm} />
+      </div>
 
       {filteredCountries.length > 0 ? (
         filteredCountries.map((country) => (
