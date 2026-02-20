@@ -2,6 +2,7 @@ import "./Body.css"
 import { useEffect, useState } from "react"
 import  Dropdown  from "./Dropdown"
 import {type  Country } from "../types/country_type"
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Body = () => {
   const [data, setData] = useState<Country[]>([]);
@@ -25,7 +26,7 @@ const Body = () => {
     <div className="dropdown">
       <div className="dropdown-btn">
         Countries
-        <button onClick={handleDropdownClick}>arrow</button>
+        <button className="arrow-btn" onClick={handleDropdownClick}><ArrowDropDownIcon/></button>
       </div>
       {showCountry && (
         <Dropdown countryData={data}/>

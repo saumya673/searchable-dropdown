@@ -27,7 +27,7 @@ const Dropdown = ({ countryData }: { countryData: Country[] }) => {
           </div>
         ))
       ) : (
-        <div className="no-results">No countries found</div>
+        <div>No countries found</div>
       )}
     </div>
   );
